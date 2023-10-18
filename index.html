@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavourful Foods</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #900c3f;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        margin: 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .home,
+      h2 {
+        text-align: center;
+      }
+
+      .home h2 {
+        font-size: 36px;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #f94c10;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+
+      .menu {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .menu h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .menu-item {
+        display: inline-block;
+        margin: 0 20px;
+        text-align: left;
+        vertical-align: top;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .menu-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .menu-item h3 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+
+      .price {
+        font-size: 18px;
+        color: #f94c10;
+      }
+      .order-button {
+        background-color: #f8de22;
+        color: #fff;
+        border: none;
+        font-size: 20px;
+        padding: 25px 30px;
+        cursor: pointer;
+        border-radius: 40px;
+      }
+
+      .about {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .contact {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Flavourful Foods</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="container">
+        <h2>Welcome to Flavourful foods</h2>
+        <p>Discover the most delicious and mouthwatering dishes in town.</p>
+        <a href="#menu" class="btn">View Menu</a>
+        <div class="image">
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/842/original/bhajia.jpeg?1696324367"
+            alt="spiced fried potatoes"
+          />
+          <h3>spiced fried potatoes</h3>
+          <p>The potatoes are first boiled until soft, then deep-fried..</p>
+          <span class="price"> Price:$9.99</span><br />
+          <button
+            class="order-button"
+            data-item="Food Item 1"
+            data-price="9.99"
+          >
+            Order
+          </button>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/841/original/ugali.jpeg?1696323934"
+            alt="Ugali fish"
+          />
+          <h3>Ugali with collard greens and fish.</h3>
+          <p>Ugali served with collard greens and fish..</p>
+          <span class="price">Price:$12.99</span><br />
+          <button
+            class="order-button"
+            data-item="Food Item 1"
+            data-price="12.99"
+          >
+            Order
+          </button>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/840/original/image1.jpeg?1696323013"
+            alt="Nyama choma"
+          />
+          <h3>Nyama choma</h3>
+          <p>
+            Grilled meat served with fried potatoes and chapati.The aroma of
+            this Kenyan stew will delight your senses.
+          </p>
+          <span class="price">Price:$17.99</span><br />
+          <button
+            class="order-button"
+            data-item="Food Item 1"
+            data-price="17.99"
+          >
+            Order
+          </button>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/836/original/chicken_stew.jpeg?1696322700"
+            alt="Bata"
+          />
+          <h3>Bata stew</h3>
+          <p>
+            Bata stew can be served with rice,flat bread,spaghetti or any other
+            accompanments according to the customers' liking.
+          </p>
+          <span class="price">Price:$9.99</span><br />
+          <button
+            class="order-button"
+            data-item="Food Item 1"
+            data-price="9.99"
+          >
+            Order
+          </button>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/837/original/chapos.jpeg?1696322767"
+            alt="Chapati"
+          />
+          <h3>Chapatis</h3>
+          <p>
+            Chapati can be served with stews or teas.It is so delicious and you
+            will enjoy it alot.
+          </p>
+          <span class="price">Price:$5.99</span><br />
+          <button
+            class="order-button"
+            data-item="Food Item 1"
+            data-price="5.99"
+          >
+            Order
+          </button>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/839/original/nyama.jpeg?1696322929"
+            alt="Chicken stew"
+          />
+          <h3>Chicken stew</h3>
+          <p>
+            Chicken stew can be served with rice,flat bread,spaghetti or any
+            other accompanments according to the customers' liking.
+          </p>
+          <span class="price">Price:$20.99</span><br />
+          <button
+            class="order-button"
+            data-item="Food Item 1"
+            data-price="17.99"
+          >
+            Order
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          We are passionate about food and committed to serving you the best
+          culinary experience. Our chefs carefully select the finest ingredients
+          to create mouthwatering dishes that will satisfy your taste buds.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or feedback, feel free to reach out to us:
+        </p>
+        <address>
+          <p>
+            Email:
+            <a href="mailto:info@flavourfulfoods.com"
+              >info@flavourfulfoods.com</a
+            >
+          </p>
+          <p>Phone: +2 (547) 456-7890</p>
+        </address>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Flavourful Foods</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const orderButtons = document.querySelectorAll(".order-button");
+
+        // Add a click event listener to each "Order" button
+        orderButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Prompt the user for their name and address
+            const name = prompt("Please enter your name:");
+            const address = prompt("Please enter your address:");
+
+            if (name && address) {
+              // Display a confirmation message
+              alert(
+                `Thank you, ${name}! Your order will be shipped to ${address}.`
+              );
+            } else {
+              // Handle the case where the user cancels the prompt
+              alert(
+                "Order cancelled. Please enter your name and address to place the order."
+              );
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
